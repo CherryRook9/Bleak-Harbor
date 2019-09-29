@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MenuControls.cs" />
+    <Compile Include="Assets\Scripts\Settings.cs" />
     <None Include="Assets\Scripts\readme.txt" />
     <None Include="Assets\Resources\readme.txt" />
     <None Include="Assets\Sprites\readme.txt" />
