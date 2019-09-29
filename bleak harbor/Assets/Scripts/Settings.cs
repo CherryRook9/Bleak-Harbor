@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class Settings : MonoBehaviour
 
     public void FullScreenToggle()
     {
-        isFullScreen = !isFullScreen;
+        isFullScreen = !Screen.fullScreen;
+        //isFullScreen = !isFullScreen;
         Screen.fullScreen = isFullScreen;
     }
 
