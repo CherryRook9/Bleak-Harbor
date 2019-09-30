@@ -12,12 +12,16 @@ public class Settings : MonoBehaviour
     public void FullScreenToggle()
     {
         isFullScreen = !Screen.fullScreen;
-        //isFullScreen = !isFullScreen;
         Screen.fullScreen = isFullScreen;
     }
 
     public void AudioVolume(float sliderValue)
     {
         am.SetFloat("masterVolume", sliderValue);
+    }
+
+    public void Quality(int q)
+    {
+        QualitySettings.SetQualityLevel(q);
     }
 }
